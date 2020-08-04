@@ -1,12 +1,17 @@
 @import "~bulma/sass/utilities/initial-variables"
 
-$kaldi-red: #D64000
-$kaldi-red-invert: #fff
+// Config vars
+// VinVivant logo brand color: #FD461E
+$vivant-green: rgb(209, 225, 215);
+$vivant-green-invert: #fff
 
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
+$primary: $vivant-green
+$primary-invert: $vivant-green-invert
 $body-color: #333
 $black: #2b2523
+
+body
+    font-family: "Montserrat",sans-serif;
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -42,12 +47,14 @@ $black: #2b2523
 
 .full-width-image
     width: 100vw
-    height: 400px
+    height: 100vh
     background-size: cover
     background-position: bottom
     display: flex
     justify-content: center
     align-items: center
+    display: flex;
+    flex-direction: column;
 
 .btn
     display: inline-block
@@ -78,6 +85,9 @@ $black: #2b2523
   fill: currentColor
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
+.navbar-brand .navbar-item img
+    max-height: 60px;
+
 footer.footer
   padding: 3rem 0rem 0rem
   background-color: transparent
@@ -86,11 +96,23 @@ footer.footer
 $menu-item-color: $white-ter
 $menu-item-hover-color: $black !important
 $menu-item-hover-background-color: $black
-$menu-item-active-color: $kaldi-red-invert
-$menu-item-active-background-color:	$kaldi-red-invert
-$menu-list-border-left: 1px solid $kaldi-red-invert
+$menu-item-active-color: $vivant-green-invert
+$menu-item-active-background-color:	$vivant-green-invert
+$menu-list-border-left: 1px solid $vivant-green-invert
 $menu-label-color: $white-ter
 
+.startpage-navbar-item
+    background-color: #444
+    color: #fff
+    border-radius: 5px
+    padding: 20px
+    display: block
+    font-size: 150%
+    height: 250px
+    width: 178px
+
+.navbar-start.grid-wrapper
+    
 
 .menu-label
   font-size: 1em !important
@@ -129,10 +151,41 @@ $menu-label-color: $white-ter
   .blog-list-item .featured-thumbnail
     flex-basis: 50%;
 
-+mobile
++mobile 
   .blog-list-item header
     display: block
   .blog-list-item .featured-thumbnail
     text-align: center;
     max-width: 70%;
     margin: 0 0 1em;
+
+.full-width-image
+    .navbar
+        min-height: 400px
+        height: 100%
+        background: transparent
+        width: 80%
+        margin: 0 auto
+        .container 
+            width: 100%
+            height: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+
+#startPageNavMenu
+    width: 100%
+    height: 100%
+    display: block
+    background: transparent
+    .has-text-centered
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        .startpage-nav-item
+            width: 30%
+            margin: 5% 1%
+@media (max-width: 400px)
+  .startpage-nav-item
+    display: block;
+  

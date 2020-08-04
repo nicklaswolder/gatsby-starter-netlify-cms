@@ -3,11 +3,13 @@ import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import './test.sass'
+import './flexgrid.sass'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 
 const TemplateWrapper = ({ children }) => {
     const { title, description } = useSiteMetadata()
+    console.log(children);
     return (
         <div>
             <Helmet>
@@ -35,7 +37,7 @@ const TemplateWrapper = ({ children }) => {
 
                 <link
                     rel="mask-icon"
-                    href={`${withPrefix('/')}img/safari-pinned-tab.svg`}
+                    href={`${withPrefix('/')}img/favicon.ico`}
                     color="#ff4400"
                 />
                 <meta name="theme-color" content="#fff" />
@@ -50,7 +52,7 @@ const TemplateWrapper = ({ children }) => {
             </Helmet>
             <Navbar />
             <div>{children}</div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }
