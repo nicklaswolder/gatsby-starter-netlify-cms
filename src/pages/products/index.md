@@ -114,5 +114,5 @@ testimonials:
   - author: Philipp Trommler
     quote: Kaldi is the place to go if you want the best quality coffee. I love
       their stance on empowering farmers and transparency.
-full_image: /img/skärmavbild-2020-08-03-kl.-09.05.52.png
+full_image: /img/jumbotron.jpg
 ---
