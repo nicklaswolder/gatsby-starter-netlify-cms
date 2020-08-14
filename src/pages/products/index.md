@@ -35,7 +35,7 @@ description: Vin vivant är en vinimportör med detta i fokus och bla bla bla
 intro:
   blurbs:
     - image: /img/skärmavbild-2020-08-14-kl.-15.54.59.png
-      text: >-
+      text: >
         Olivier startade sin vin bana på la Part des Anges, den välkända
         vinbar/butiken i Nice. Detta efter en tidig inrutad bana mot juridik som
         inte riktigt kunde mäta sig mot charmen att jobba med naturliga viner
@@ -50,58 +50,41 @@ intro:
 
 
         Serien ”Deferlante” är negoc druvor från olika bekanta runt om i Frankrike som alltid är ofiltrerade & osvavlade. För de egna vinerna, les Vignes d`Olivier, tvekar olivier inte att använda ( väldigt sparsamt dock) svavel när det verkligen behövs.
+    - image: /img/skärmavbild-2020-08-14-kl.-15.58.07.png
+      text: >-
+        La Perdida startade 2012 efter att Ignacio (eller som alla säger, Nacho)
+        fick marken av sin farmor, som berättade att plantorna på maken var över
+        60 år gamla, och måste tas hand om med respekt. När Nacho kom till
+        marken, gick det inte att se att det någonsin varit en vinmark här, och
+        namnet La Perdida, ”den glömda”, kom till liv. 
+
+        Nacho är utbildat biolog, och har som avsikt att göra vin som man gjorde förr. Han har en förkärlek till Palomino och Garnacha Tintorera som var stora här före diktatorn Francos tid, men som under hans styre revs upp till förmån för bulkdruvor.
+
+        Nacho jobbar med den berömda Tinaja (lerkrukor för jäsning & lagring) tillverkaren Juan Padilla, 5e generations tinajatillverkare, som har som standard att lagra vin i två år innan försäljning, för att säkra upp lerans täthet och kvalité.
+
+        Nacho varken filtrerar eller svavlar sina viner, men använder vissa, väldigt fuktiga år, en mindre mängd koppar i vingården för att undvika röta & mögel.
+
+        Markerna ligger ca 500 meter över havet, med marker uppbyggda av granit & lera.
+    - image: /img/skärmavbild-2020-08-14-kl.-15.59.36.png
+      text: >-
+        2012 tog Laure & Benjamin över sin första vinplot, efter ett par års
+        arbetande inom jordbruk och på diverse skidorter. Paret befinner sig i
+        staden Cogny, precis söder om Beaujolais. Marken är uppbyggd på lera &
+        kalk, med ”gyllende” stenar bland vinmarkerna.
 
 
+        Idag har Yvernays 3,7 ha och odlar Gamay, Gamaret & Chardonnay. De är ekologiskt certifierade och köper inte in några druvor för negoc blends.
 
-        Ronds Rouge 2019					160 kr
+        Alltid spontanjäst, och aldrig filtrering eller svavel.
+    - image: /img/skärmavbild-2020-08-14-kl.-16.01.28.png
+      text: >-
+        Joao Pato föddes 1920 och dog 1986. Han återföddes då som DUCKMAN, ett
+        projekt delat i konst och vinmakning. DUCKMAN handlar om att gå tillbaka
+        till Joaos tid, innan de lokala druvorna blev ”fula”, innan industriella
+        vinerier tog över Barraida, och att fokusera på vinmakningen istället
+        för vinmakaren (enligt Maria).
 
-        Cinsault/ Grenache/ Syrah
-
-        5 dagars samjäsning med hela klasar. 
-
-        Utan svavel.
-
-
-        Déferlantes Rouge 2019					155 kr
-
-        Ugni Blanc/ Merlot/ Carignan
-
-        5 dagars samjäsning med hela klasar.
-
-        Utan svavel
-
-        Druvor från St Martin de Londres i Languedoc
-
-
-        Déferlantes Pressées 2019					150 kr
-
-        Merlot
-
-        Direkt press.
-
-        Utan svavel
-
-        Druvor från St Martin de Londres i Languedoc
-    - image: /img/coffee-gear.png
-      text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
-    - image: /img/tutorials.png
-      text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
-    - image: /img/meeting-space.png
-      text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
+        Vilket som. Otroligt härliga viner. Det förekommer svavel i många av vinerna, men låga halter.
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
