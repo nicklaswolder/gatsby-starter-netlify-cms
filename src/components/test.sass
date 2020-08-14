@@ -1,5 +1,10 @@
 @import "~bulma/sass/utilities/initial-variables"
 
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&amp;family=Permanent+Marker&amp;display=swap)
+
+$bread: 'Montserrat', serif
+$headline: 'Permanent Marker', serif
+
 // Config vars
 // VinVivant logo brand color: #FD461E
 $vivant-green: rgb(209, 225, 215);
@@ -11,7 +16,7 @@ $body-color: #333
 $black: #2b2523
 
 body
-    font-family: "Montserrat",sans-serif;
+    font-family: $bread !important
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -47,14 +52,14 @@ body
 
 .full-width-image
     width: 100vw
-    height: 100vh
+    height: calc(100vh - 3vh - 120px)
     background-size: cover
     background-position: bottom
     display: flex
     justify-content: center
     align-items: center
-    display: flex;
-    flex-direction: column;
+    display: flex
+    flex-direction: column
 
 .btn
     display: inline-block
@@ -102,17 +107,29 @@ $menu-list-border-left: 1px solid $vivant-green-invert
 $menu-label-color: $white-ter
 
 .startpage-navbar-item
-    background-color: #444
-    color: #fff
+    background-color: rgba(209, 225, 215, 0.8)
+    color: #000
+    font-family: "Montserrat",sans-serif
+    font-weight: 700
     border-radius: 5px
     padding: 20px
-    display: block
+    display: flex
     font-size: 150%
     height: 250px
     width: 178px
+    justify-content: center
+    flex-direction: column
 
-.navbar-start.grid-wrapper
-    
+.navbar-start.has-text-centered
+    align-items: center
+    width: 100%
+    justify-content: flex-end
+    .navbar-item
+        font-weight: 700
+        text-transform: uppercase
+    .navbar-item:hover
+        color: rgb(134, 31, 52)
+        text-decoration: underline
 
 .menu-label
   font-size: 1em !important
@@ -164,7 +181,7 @@ $menu-label-color: $white-ter
         min-height: 400px
         height: 100%
         background: transparent
-        width: 80%
+        width: 100%
         margin: 0 auto
         .container 
             width: 100%
@@ -172,20 +189,93 @@ $menu-label-color: $white-ter
             display: flex
             align-items: center
             justify-content: center
+            max-width: 100%
 
 #startPageNavMenu
-    width: 100%
-    height: 100%
-    display: block
-    background: transparent
+    display: flex;
+    flex-direction: row; 
+    background: transparent;
+    max-width: 100%;
     .has-text-centered
-        display: flex
-        flex-wrap: wrap
-        justify-content: space-between
-        .startpage-nav-item
-            width: 30%
-            margin: 5% 1%
+       display: flex; 
+       flex-direction: row;
+       justify-content: center;
+       flex-wrap: wrap;
+       .startpage-nav-item
+            width: 100%;
+            margin: 5px;
+            max-width: 178px;
+            height: 250px; 
+            .startpage-navbar-item
+                width: 100%;
+                border-radius: 8px / 8px
+                background: #394B40
+                font-weight: 100;
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 100%;
+
+
+\:root
+  --primary:#00A765
+  --secondary:#ffe1e1
+  --accent:#ffeb37
+
+.artist-card:hover
+  clip-path: circle(100%)
+
+.artist-card__title
+  margin: 0
+  display: flex
+  align-self: center
+  padding: 5% 0.25em
+  position: relative
+  z-index: 1
+  font-size: 5vmin
+  text-align: center
+  text-transform: uppercase
+
+@supports (clip-path: circle(25%))
+  .artist-card__title
+    clip-path: inset(50% 50%)
+    animation: heading-in 400ms 1000ms forwards
+
+@keyframes heading-in
+  to
+    clip-path: inset(0% 0%)
+
+@supports (-webkit-text-stroke: 1px black)
+  .artist-card__title
+    -webkit-text-stroke: 0.035em #001
+    color: transparent
+    text-shadow: 0.075em 0.075em #D1E1D7
+
+@media screen and (min-width: 25rem)
+  .artist-card:hover .artist-card__title::before
+    clip-path: circle(100%)
+
+@media screen and (min-width: 25rem)
+  .artist-card__title::before
+    content: ""
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 60%
+    clip-path: circle(3% at 95%)
+    background-image: linear-gradient(150deg, #F3E482 30%, #D1E1D7 50%, #ffe1e1)
+    z-index: -1
+    transition: clip-path 400ms ease-in-out
+
 @media (max-width: 400px)
   .startpage-nav-item
     display: block;
   
+.artist-card 
+    background: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+.navbar
+    background: $vivant-green

@@ -2,9 +2,13 @@ import React from 'react'
 import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
 import logo from '../img/vv.png'
+import bird from '../img/bird.png'
 import { Row, Col } from 'react-simple-flex-grid';
 import './flexgrid.sass'
-
+import { GiWineBottle } from 'react-icons/gi'
+import { FcAbout } from 'react-icons/fc'
+import { RiMailSendLine } from 'react-icons/ri'
+import { AiOutlineShop } from 'react-icons/ai'
 
 
 const StartPageNavbar = class extends React.Component {
@@ -49,31 +53,44 @@ const StartPageNavbar = class extends React.Component {
                         className={`navbar-menu ${this.state.navBarActiveClass}`}
                     >
                         <div className="navbar-start has-text-centered grid-wrapper">
-                            <div className={"startpage-nav-item"}>
-                                <Link className="startpage-navbar-item" to="/products">
+                            {/* <div className={"startpage-nav-item first"}>
+                                <Link to="/" className="startpage-navbar-item testtesttest" title="Logo">
+                                    <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+                                </Link>
+                            </div> */}
+                            <div className={"artist-card second"}>
+                                <Link className="artist-card__title testtesttest" to="/products">
+                                    {/* <GiWineBottle /> */}
                                     Våra producenter
                                 </Link>
                             </div>
-                            <div className={"startpage-nav-item"}>
-                                <Link className="startpage-navbar-item" to="/blog">
-                                    Savant
-                                </Link>
+
+                            <div className={"artist-card fourth"}>
+                                <a className="artist-card__title testtesttest" href="https://privatimport.netlify.app/">
+                                    {/* <AiOutlineShop /> */}
+                                    Butik
+                                </a>
                             </div>
-                            <div className={"startpage-nav-item"}>
-                                <Link className="startpage-navbar-item" to="/privatimport">
-                                    Privatimport
-                                </Link>
-                            </div>
-                            <div className={"startpage-nav-item"}>
-                                <Link className="startpage-navbar-item first" to="/about">
+                            <div className={"artist-card fifth"}>
+                                <Link className="artist-card__title testtesttest first" to="/about">
+                                    {/* <FcAbout /> */}
                                     Om oss
                                 </Link>
                             </div>
-                            <div className={"startpage-nav-item"}>
-                                <Link className="startpage-navbar-item" to="/contact">
+                            <div className={"artist-card sixth"}>
+                                <Link className="artist-card__title testtesttest" to="/contact">
+                                    {/* <RiMailSendLine /> */}
                                     Kontakta oss
                                 </Link>
                             </div>
+                            <div className={"artist-card third"}>
+                                <a className="artist-card__title testtesttest" href="https://savantbar.se">
+                                    {/* <img src={bird} alt="Savant" style={{ width: '88px' }} /> */}
+                                    Savant
+                                </a>
+                            </div>
+
+
                         </div>
                     </div>
                 </div >
