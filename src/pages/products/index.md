@@ -107,6 +107,7 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
+full_image: /img/skärmavbild-2020-08-03-kl.-09.05.32.png
 testimonials:
   - author: Elisabeth Kaurismäki
     quote: The first time I tried Kaldi’s coffee, I couldn’t even believe that was
@@ -114,5 +115,4 @@ testimonials:
   - author: Philipp Trommler
     quote: Kaldi is the place to go if you want the best quality coffee. I love
       their stance on empowering farmers and transparency.
-full_image: /img/jumbotron.jpg
 ---
