@@ -104,11 +104,4 @@ main:
     alt: Coffee beans
     image: /img/img_93ca74c36acb-1.jpeg
 full_image: /img/test.png
-testimonials:
-  - author: Elisabeth Kaurismäki
-    quote: The first time I tried Kaldi’s coffee, I couldn’t even believe that was
-      the same thing I’ve been drinking every morning.
-  - author: Philipp Trommler
-    quote: Kaldi is the place to go if you want the best quality coffee. I love
-      their stance on empowering farmers and transparency.
 ---
