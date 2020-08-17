@@ -40,13 +40,13 @@ main:
   heading: För oss är det viktigt att välja rätt vinmakare
   description: "Vi väljer vinmakare ... bla bla bla ... "
   image1:
-    alt: A close-up of a paper filter filled with ground coffee
+    alt: bildtext
     image: /img/skärmavbild-2020-08-03-kl.-09.03.23.png
   image2:
-    alt: A green cup of a coffee on a wooden table
-    image: /img/apple-touch-icon.png
-  image3:
-    alt: Coffee beans
+    alt: bildtext
     image: /img/img_93ca74c36acb-1.jpeg
+  image3:
+    alt: bild
+    image: /img/skärmavbild-2020-08-03-kl.-09.05.52.png
 full_image: /img/test.png
 ---
