@@ -30,7 +30,7 @@ pricing:
       plan: Custom
       price: ??
 title: Vin Vivant
-image: /img/skärmavbild-2020-08-03-kl.-09.05.52.png
+image: /img/chemex.jpg
 description: Vin vivant är en vinimportör med detta i fokus och bla bla bla
 intro:
   blurbs:
@@ -103,11 +103,11 @@ main:
     image: /img/products-grid3.jpg
   image2:
     alt: A green cup of a coffee on a wooden table
-    image: /img/products-grid2.jpg
+    image: /img/blog-index.jpg
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
-full_image: /img/skärmavbild-2020-08-03-kl.-09.05.32.png
+full_image: /img/jumbotron.jpg
 testimonials:
   - author: Elisabeth Kaurismäki
     quote: The first time I tried Kaldi’s coffee, I couldn’t even believe that was
