@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
+import BlogRoll from '../components/BlogRoll'
+
 import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
@@ -46,6 +48,7 @@ export const ProductPageTemplate = ({
                                 <p>{description}</p>
                             </div>
                         </div>
+                        <BlogRoll />
                         <div className="columns">
                             <div className="column is-10 is-offset-1">
                                 <Features gridItems={intro.blurbs} />
