@@ -30,7 +30,7 @@ pricing:
       plan: Custom
       price: ??
 title: Vin Vivant
-image: /img/skärmavbild-2020-08-03-kl.-09.06.02.png
+image: /img/fagel.png
 description: Vin vivant är en vinimportör med detta i fokus och bla bla bla
 intro:
   blurbs:
