@@ -30,7 +30,7 @@ pricing:
       plan: Custom
       price: ??
 title: Vin Vivant
-image: /img/chemex.jpg
+image: /img/skärmavbild-2020-08-03-kl.-09.06.02.png
 description: Vin vivant är en vinimportör med detta i fokus och bla bla bla
 intro:
   blurbs:
@@ -92,12 +92,8 @@ intro:
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
 main:
-  heading: Great coffee with no compromises
-  description: >
-    We hold our coffee to the highest standards from the shrub to the cup.
-    That’s why we’re meticulous and transparent about each step of the coffee’s
-    journey. We personally visit each farm to make sure the conditions are
-    optimal for the plants, farmers and the local environment.
+  heading: För oss är det viktigt att välja rätt vinmakare
+  description: "Vi väljer vinmakare ... bla bla bla ... "
   image1:
     alt: A close-up of a paper filter filled with ground coffee
     image: /img/products-grid3.jpg
@@ -107,7 +103,7 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
-full_image: /img/jumbotron.jpg
+full_image: /img/img_9093.jpg
 testimonials:
   - author: Elisabeth Kaurismäki
     quote: The first time I tried Kaldi’s coffee, I couldn’t even believe that was
