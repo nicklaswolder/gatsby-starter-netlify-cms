@@ -96,14 +96,14 @@ main:
   description: "Vi väljer vinmakare ... bla bla bla ... "
   image1:
     alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid3.jpg
+    image: /img/skärmavbild-2020-08-03-kl.-09.03.23.png
   image2:
     alt: A green cup of a coffee on a wooden table
-    image: /img/blog-index.jpg
+    image: /img/apple-touch-icon.png
   image3:
     alt: Coffee beans
-    image: /img/products-grid1.jpg
-full_image: /img/jumbotron.jpg
+    image: /img/img_93ca74c36acb-1.jpeg
+full_image: /img/test.png
 testimonials:
   - author: Elisabeth Kaurismäki
     quote: The first time I tried Kaldi’s coffee, I couldn’t even believe that was
