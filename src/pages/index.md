@@ -8,7 +8,7 @@ subheading: We‘re a import company in Sweden that only import and drink
 mainpitch:
   title: Main freakin pitch
   description: Main freakin pitch text
-description: Description
+description: "Description "
 intro:
   blurbs:
     - image: /img/skärmavbild-2020-08-03-kl.-09.05.32.png
