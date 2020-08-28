@@ -68,19 +68,30 @@ const StartPageNavbar = class extends React.Component {
                             <div className={"artist-card fourth"}>
                                 <a className="artist-card__title testtesttest" href="https://privatimport.netlify.app/">
                                     {/* <AiOutlineShop /> */}
-                                    Butik
+                                    Privatkund
                                 </a>
                             </div>
-                            <div className={"artist-card fifth"}>
+                            <div className={"artist-card fourth"}>
+                                <Link className="artist-card__title testtesttest" to="/restaurant">
+                                    {/* <AiOutlineShop /> */}
+                                    Restaurangkund
+                                </Link>
+                            </div>
+                            {/* <div className={"artist-card fifth"}>
                                 <Link className="artist-card__title testtesttest first" to="/about">
-                                    {/* <FcAbout /> */}
                                     Om oss
+                                </Link>
+                            </div> */}
+                            <div className={"artist-card sixth"}>
+                                <Link className="artist-card__title testtesttest" to="/contact">
+                                    {/* <RiMailSendLine /> */}
+                                    Kontakt
                                 </Link>
                             </div>
                             <div className={"artist-card sixth"}>
                                 <Link className="artist-card__title testtesttest" to="/contact">
                                     {/* <RiMailSendLine /> */}
-                                    Kontakta oss
+                                    Samarbeten
                                 </Link>
                             </div>
                             <div className={"artist-card third"}>
@@ -90,7 +101,6 @@ const StartPageNavbar = class extends React.Component {
                                 </a>
                             </div>
 
-
                         </div>
                     </div>
                 </div >
@@ -98,5 +108,31 @@ const StartPageNavbar = class extends React.Component {
         )
     }
 }
+
+export const instaQuery = graphql`
+{
+    allInstaNode(sort: { fields: timestamp, order: DESC }, limit: 12) {
+      edges {
+        node {
+          id
+          caption
+          localFile {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`
+
+
+
+
+
+
 
 export default StartPageNavbar

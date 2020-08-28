@@ -60,34 +60,26 @@ const Navbar = class extends React.Component {
                         className={`navbar-menu ${this.state.navBarActiveClass}`}
                     >
                         <div className="navbar-start has-text-centered">
+                            <a className="navbar-item" href="https://privatimport.netlify.app">
+                                Privatkund
+                            </a>
+
+                            <Link className="navbar-item" to="/restaurant">
+                                Restaurangkund
+                            </Link>
                             <Link className="navbar-item" to="/products">
                                 Våra producenter
                             </Link>
-                            <a className="navbar-item" href="https://privatimport.netlify.app">
-                                Butik
-                            </a>
-                            <Link className="navbar-item" to="/about">
-                                Om oss
-                            </Link>
+                            {/* <Link className="navbar-item" to="/about">
+                                Filosofi
+                            </Link> */}
                             <Link className="navbar-item" to="/contact">
                                 Kontakt
                             </Link>
                             <a className="navbar-item" href="https://www.savantbar.se">
-                                Savant
+                                Samarbeten
                             </a>
                         </div>
-                        {/* <div className="navbar-end has-text-centered">
-                            <a
-                                className="navbar-item"
-                                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <span className="icon">
-                                    <img src={github} alt="Github" />
-                                </span>
-                            </a>
-                        </div> */}
                     </div>
                 </div>
             </nav>

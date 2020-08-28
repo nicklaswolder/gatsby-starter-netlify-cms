@@ -30,6 +30,13 @@ module.exports = {
             },
         },
         'gatsby-plugin-sharp',
+        'gatsby-plugin-instagram',
+        {
+            resolve: 'gatsby-source-instagram',
+            options: {
+                username: `33538380057`,
+            },
+        },
         'gatsby-transformer-sharp',
         {
             resolve: 'gatsby-transformer-remark',

@@ -4,6 +4,8 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import './test.sass'
 import './flexgrid.sass'
+import ImageGallery from '../components/imageGallery';
+
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 
@@ -52,6 +54,8 @@ const TemplateWrapper = ({ children }) => {
             </Helmet>
             <Navbar />
             <div>{children}</div>
+            <ImageGallery />
+
             {/* <Footer /> */}
         </div>
     )

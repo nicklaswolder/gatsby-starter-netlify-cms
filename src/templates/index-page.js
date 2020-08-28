@@ -3,82 +3,132 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import Layout from '../components/startpageLayout'
 import StartPageNavbar from '../components/startpageNav'
+import Features from '../components/Features'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import MyFunkySlider from '../components/slider'
+
 import { Link } from 'gatsby'
 import logo from '../img/vv.png'
 
 export const IndexPageTemplate = ({
     image,
     title,
+    mainpitch,
+    heading,
+    description,
     subheading,
+    intro,
+    main,
 }) => (
-        <div style={{
-            padding: "3vh",
-            display: "flex",
-            position: "relative"
+        <div>
+            <div style={{
+                padding: "3vh",
+                display: "flex",
+                position: "relative"
 
-        }}>
-            <div
-                className="full-width-image margin-top-0"
-                style={{
-                    backgroundImage: `url(${
-                        !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-                        })`,
-                    backgroundPosition: `top left`,
-                    backgroundAttachment: `fixed`,
-                }}
-            >
-                <div style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    width: "100%"
-                }}>
-                    <div
-                        style={{
-                            display: 'block',
-                            height: '150px',
-                            lineHeight: '1',
-                            marginTop: '10px',
-                            justifyContent: 'space-around',
-                            alignItems: 'left',
-                            flexDirection: 'column',
-                            position: "absolute",
-                            top: "4vh",
-                            left: "2vh",
-                            maxWidth: "90%"
-                        }}
-                    >
-                        <h1
-                            className=" is-size-3-mobile is-size-2-tablet is-size-1-widescreen testtesttest logo-container "
+            }}>
+                <div
+                    className="full-width-image margin-top-0"
+                    style={{
+                        backgroundImage: `url(${
+                            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+                            })`,
+                        backgroundPosition: `top left`,
+                        backgroundAttachment: `fixed`,
+                    }}
+                >
+                    <div style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        width: "100%"
+                    }}>
+                        <div
                             style={{
-                                boxShadow:
-                                    'rgb(209, 225, 215) 0.5rem 0px 0px, rgb(209, 225, 215) -0.5rem 0px 0px',
-                                backgroundColor: 'rgb(209, 225, 215)',
-                                color: '#000',
-                                fontWeight: '100',
+                                display: 'block',
+                                height: '150px',
                                 lineHeight: '1',
-                                padding: '0.25em',
+                                marginTop: '10px',
+                                justifyContent: 'space-around',
+                                alignItems: 'left',
+                                flexDirection: 'column',
+                                position: "absolute",
+                                top: "4vh",
+                                left: "2vh",
+                                maxWidth: "90%"
                             }}
                         >
-                            {title}
-                        </h1>
-                        <h3
-                            className=" is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-                            style={{
-                                boxShadow:
-                                    'rgb(209, 225, 215) 0.5rem 0px 0px, rgb(209, 225, 215) -0.5rem 0px 0px',
-                                backgroundColor: 'rgb(209, 225, 215)',
-                                color: '#000',
-                                fontWeight: '100', lineHeight: '1',
-                                padding: '0.25em',
-                            }}
-                        >
-                            {subheading}
-                        </h3>
+                            <h1
+                                className=" is-size-3-mobile is-size-2-tablet is-size-1-widescreen testtesttest logo-container "
+                                style={{
+                                    boxShadow:
+                                        'rgb(209, 225, 215) 0.5rem 0px 0px, rgb(209, 225, 215) -0.5rem 0px 0px',
+                                    backgroundColor: 'rgb(209, 225, 215)',
+                                    color: '#000',
+                                    fontWeight: '100',
+                                    lineHeight: '1',
+                                    padding: '0.25em',
+                                }}
+                            >
+                                {title}
+                            </h1>
+                            <h3
+                                className=" is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+                                style={{
+                                    boxShadow:
+                                        'rgb(209, 225, 215) 0.5rem 0px 0px, rgb(209, 225, 215) -0.5rem 0px 0px',
+                                    backgroundColor: 'rgb(209, 225, 215)',
+                                    color: '#000',
+                                    fontWeight: '100', lineHeight: '1',
+                                    padding: '0.25em',
+                                }}
+                            >
+                                {subheading}
+                            </h3>
+                        </div>
+                        <StartPageNavbar />
                     </div>
-                    <StartPageNavbar />
+
+                </div>
+
+            </div>
+            <div className="content text-container">
+                <div className="columns">
+                    <div className="column is-12">
+                        <h3 className="has-text-weight-semibold is-size-2">
+                            {heading}
+                        </h3>
+                        <p>{description}</p>
+                    </div>
+                </div>
+
+                <Features gridItems={intro.blurbs} />
+
+            </div>
+            <div className="content pitch-container">
+                <div className="content">
+                    <div className="tile">
+                        <h1 className="title">{mainpitch.title}</h1>
+                    </div>
+                    <div className="tile">
+                        <h3 className="subtitle">{mainpitch.description}</h3>
+                    </div>
                 </div>
             </div>
+            <div className="columns">
+                <div className="column is-7">
+                    <h3 className="has-text-weight-semibold is-size-3">
+                        {main.heading}
+                    </h3>
+                    <p>{main.description}</p>
+                </div>
+            </div>
+            <div className="tile is-ancestor">
+                <div className="tile is-vertical">
 
+                    <MyFunkySlider pictures={[main.image1, main.image2, main.image3]} />
+
+                </div>
+            </div>
         </div>
     )
 
@@ -91,6 +141,13 @@ IndexPageTemplate.propTypes = {
     description: PropTypes.string,
     intro: PropTypes.shape({
         blurbs: PropTypes.array,
+    }),
+    main: PropTypes.shape({
+        heading: PropTypes.string,
+        description: PropTypes.string,
+        image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+        image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+        image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     }),
 }
 
@@ -107,6 +164,7 @@ const IndexPage = ({ data }) => {
                 mainpitch={frontmatter.mainpitch}
                 description={frontmatter.description}
                 intro={frontmatter.intro}
+                main={frontmatter.main}
             />
         </Layout>
     )
@@ -145,7 +203,7 @@ export const pageQuery = graphql`
           blurbs {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
+                fluid(maxWidth: 2048, quality: 64) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -155,6 +213,40 @@ export const pageQuery = graphql`
           heading
           description
         }
+        main {
+            heading
+            description
+            image1 {
+              alt
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 2048, quality: 92) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
+            image2 {
+              alt
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 2048, quality: 92) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
+            image3 {
+              alt
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 2048, quality: 72) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
+          }
       }
     }
   }

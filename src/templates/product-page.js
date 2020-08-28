@@ -55,7 +55,6 @@ export const ProductPageTemplate = ({
                                 <div className="columns">
                                     <div className="column is-7">
                                         <h3 className="has-text-weight-semibold is-size-3">
-                                            {main.heading}
                                         </h3>
                                         <p>{main.description}</p>
                                     </div>
