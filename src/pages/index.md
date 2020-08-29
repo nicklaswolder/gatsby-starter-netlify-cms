@@ -29,21 +29,21 @@ main:
   heading: Webbshop
   description: Här är några flaskor från webbshoppen
   image1:
-    alt: flaska1
-    image: /img/skärmavbild-2020-08-29-kl.-09.11.06.png
+    alt: http://privatimport.netlify.app
+    image: /img/c73e2baa.jpeg
   image2:
     alt: flaska1
-    image: /img/skärmavbild-2020-08-29-kl.-09.10.53.png
+    image: /img/c4ce1c04.jpeg
   image3:
     alt: flaska1
-    image: /img/skärmavbild-2020-08-29-kl.-09.10.39.png
+    image: /img/49c3b37e.jpeg
   image4:
-    image: /img/skärmavbild-2020-08-29-kl.-09.10.30.png
+    image: /img/6bdb4c28.jpeg
     alt: flaska1
   image5:
-    image: /img/skärmavbild-2020-08-29-kl.-09.10.19.png
+    image: /img/7e777ec5.jpeg
     alt: flaska1
   image6:
-    image: /img/skärmavbild-2020-08-29-kl.-09.10.19.png
+    image: /img/a25c7969.jpeg
     alt: flaska1
 ---
