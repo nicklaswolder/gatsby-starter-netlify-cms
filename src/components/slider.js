@@ -1,8 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Slider from 'react-slick';
+import Img from 'gatsby-image';
 
-import Image from 'gatsby-image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper';
+
+import 'swiper/swiper.scss';
 
 
 
@@ -10,48 +14,47 @@ const MyFunkySlider = (props) => {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 1000,
-        autoplaySpeed: 3000,
-        fadeIn: false,
-        autoplay: true,
-        pauseOnHover: false,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 1000,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true,
-                },
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                },
-            },
-        ],
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
     };
 
     // destructuring
-    console.log(props.pictures);
+    const Image = styled(Img, {
+        objectFit: 'cover',
+        objectPosition: '100% 0',
+        width: '100%',
+        height: '100%',
+        maxHeight: '25rem',
+    });
 
-    props.pictures.map((image) => {
-        console.log(image)
-        console.log(image.image)
-    })
+    SwiperCore.use([Navigation, Pagination, Scrollbar, Autoplay]);
+
+    const renderSlides = () => {
+        const images = props.pictures.map((image) => {
+            const img = image.image.childImageSharp;
+            console.log(img.fluid.src)
+            return (
+                <SwiperSlide>
+                    <div style={{ backgroundImage: "url(" + img.fluid.src + ")", backgroundSize: "300px", width: "300px", height: "300px" }}></div>
+                </SwiperSlide>
+
+            );
+        });
+        return images;
+    };
+
     return (
-
-        <Slider {...settings}>
-            {props.pictures.map((image, i) => (
-                <Image fluid={image.image.childImageSharp.fluid} />
-            ))}
-        </Slider>
-    )
+        <Swiper
+            spaceBetween={10}
+            slidesPerView={3}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
+            loop={true}
+        >
+            {renderSlides()}
+        </Swiper>
+    );
 };
 
 export default MyFunkySlider;

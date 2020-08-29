@@ -41,6 +41,7 @@
     "slick-carousel": "^1.8.1",
     "styletron-engine-atomic": "^1.4.6",
     "styletron-react": "^5.2.7",
+    "swiper": "^6.1.2",
     "uuid": "^7.0.0",
     "yarn": "^1.22.4"
   },

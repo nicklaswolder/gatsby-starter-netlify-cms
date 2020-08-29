@@ -58,12 +58,6 @@ const StartPageNavbar = class extends React.Component {
                                     <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
                                 </Link>
                             </div> */}
-                            <div className={"artist-card second"}>
-                                <Link className="artist-card__title testtesttest" to="/products">
-                                    {/* <GiWineBottle /> */}
-                                    Våra producenter
-                                </Link>
-                            </div>
 
                             <div className={"artist-card fourth"}>
                                 <a className="artist-card__title testtesttest" href="https://privatimport.netlify.app/">
@@ -77,6 +71,13 @@ const StartPageNavbar = class extends React.Component {
                                     Restaurangkund
                                 </Link>
                             </div>
+                            <div className={"artist-card second"}>
+                                <Link className="artist-card__title testtesttest" to="/products">
+                                    {/* <GiWineBottle /> */}
+                                    Våra producenter
+                                </Link>
+                            </div>
+
                             {/* <div className={"artist-card fifth"}>
                                 <Link className="artist-card__title testtesttest first" to="/about">
                                     Om oss
@@ -94,13 +95,6 @@ const StartPageNavbar = class extends React.Component {
                                     Samarbeten
                                 </Link>
                             </div>
-                            <div className={"artist-card third"}>
-                                <a className="artist-card__title testtesttest" href="https://savantbar.se">
-                                    {/* <img src={bird} alt="Savant" style={{ width: '88px' }} /> */}
-                                    Savant
-                                </a>
-                            </div>
-
                         </div>
                     </div>
                 </div >

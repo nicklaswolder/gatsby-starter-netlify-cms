@@ -125,7 +125,7 @@ export const IndexPageTemplate = ({
             <div className="tile is-ancestor">
                 <div className="tile is-vertical">
 
-                    <MyFunkySlider pictures={[main.image1, main.image2, main.image3]} />
+                    <MyFunkySlider pictures={[main.image1, main.image2, main.image3, main.image4, main.image5, main.image6]} />
 
                 </div>
             </div>
@@ -148,6 +148,9 @@ IndexPageTemplate.propTypes = {
         image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
         image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
         image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+        image4: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+        image5: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+        image6: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     }),
 }
 
@@ -246,6 +249,36 @@ export const pageQuery = graphql`
                 }
               }
             }
+            image4 {
+                alt
+                image {
+                  childImageSharp {
+                    fluid(maxWidth: 2048, quality: 72) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+              }
+              image5 {
+                alt
+                image {
+                  childImageSharp {
+                    fluid(maxWidth: 2048, quality: 72) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+              }
+              image6 {
+                alt
+                image {
+                  childImageSharp {
+                    fluid(maxWidth: 2048, quality: 72) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+              }
           }
       }
     }

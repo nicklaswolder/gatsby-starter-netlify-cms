@@ -41,4 +41,13 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
+  image4:
+    alt: Coffee beans
+    image: /img/products-grid1.jpg
+  image5:
+    alt: Coffee beans
+    image: /img/products-grid1.jpg
+  image6:
+    alt: Coffee beans
+    image: /img/products-grid1.jpg
 ---
