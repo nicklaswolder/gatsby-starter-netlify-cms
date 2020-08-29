@@ -33,10 +33,13 @@ const MyFunkySlider = (props) => {
     const renderSlides = () => {
         const images = props.pictures.map((image) => {
             const img = image.image.childImageSharp;
-            console.log(img.fluid.src)
+            console.log(image)
+            const alt = image.alt
             return (
                 <SwiperSlide>
-                    <div className={"slide"} style={{ display: "flex", backgroundImage: "url(" + img.fluid.src + ")", backgroundSize: "300px", width: "300px", height: "300px" }}></div>
+                    <a href={alt} target="_blank">
+                        <div className={"slide"} style={{ display: "flex", backgroundImage: "url(" + img.fluid.src + ")", backgroundSize: "300px", width: "300px", height: "300px" }}></div>
+                    </a>
                 </SwiperSlide>
 
             );
