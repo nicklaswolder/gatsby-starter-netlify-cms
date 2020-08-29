@@ -36,7 +36,7 @@ const MyFunkySlider = (props) => {
             console.log(img.fluid.src)
             return (
                 <SwiperSlide>
-                    <div style={{ backgroundImage: "url(" + img.fluid.src + ")", backgroundSize: "300px", width: "300px", height: "300px" }}></div>
+                    <div className={"slide"} style={{ display: "flex", backgroundImage: "url(" + img.fluid.src + ")", backgroundSize: "300px", width: "300px", height: "300px" }}></div>
                 </SwiperSlide>
 
             );
@@ -47,11 +47,10 @@ const MyFunkySlider = (props) => {
 
     return (
         <Swiper
-            spaceBetween={10}
+            spaceBetween={50}
             slidesPerView={3}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
-            loop={true}
         >
             {renderSlides()}
         </Swiper>

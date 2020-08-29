@@ -114,20 +114,16 @@ export const IndexPageTemplate = ({
                     </div>
                 </div>
             </div>
-            <div className="columns">
-                <div className="column is-7">
+            <div className="main-heading-container content">
+                <div className="content">
                     <h3 className="has-text-weight-semibold is-size-3">
                         {main.heading}
                     </h3>
                     <p>{main.description}</p>
                 </div>
             </div>
-            <div className="tile is-ancestor">
-                <div className="tile is-vertical">
-
-                    <MyFunkySlider pictures={[main.image1, main.image2, main.image3, main.image4, main.image5, main.image6]} />
-
-                </div>
+            <div className="slider-container ">
+                <MyFunkySlider pictures={[main.image1, main.image2, main.image3, main.image4, main.image5, main.image6]} />
             </div>
         </div>
     )
