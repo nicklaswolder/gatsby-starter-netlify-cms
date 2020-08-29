@@ -43,4 +43,7 @@ main:
   image5:
     image: /img/skärmavbild-2020-08-29-kl.-09.10.19.png
     alt: flaska1
+  image6:
+    image: /img/skärmavbild-2020-08-29-kl.-09.10.19.png
+    alt: flaska1
 ---

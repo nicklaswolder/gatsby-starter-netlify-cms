@@ -44,6 +44,7 @@ const MyFunkySlider = (props) => {
         return images;
     };
 
+
     return (
         <Swiper
             spaceBetween={10}
