@@ -231,7 +231,7 @@ $menu-label-color: $white-ter
   padding: 5% 0.25em
   position: relative
   z-index: 1
-  font-size: 5vmin
+  font-size: 50px
   text-align: center
   text-transform: uppercase
 
@@ -266,6 +266,16 @@ $menu-label-color: $white-ter
     background-image: linear-gradient(150deg, #F3E482 30%, #D1E1D7 50%, #ffe1e1)
     z-index: -1
     transition: clip-path 400ms ease-in-out
+
+@media screen and (max-width: 600px)
+  #startPageNavMenu
+    margin-top: 30px
+    
+  .artist-card__title
+    font-size: 20px
+
+  .full-width-image
+    max-height: 99vh
 
 @media (max-width: 400px)
   .startpage-nav-item
@@ -361,3 +371,7 @@ $menu-label-color: $white-ter
     .content
       width: 70%
       margin: 0 auto
+
+.wrappingwrapper
+    max-width: 2000px
+    margin: 0 auto

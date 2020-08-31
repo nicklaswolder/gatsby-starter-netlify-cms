@@ -33,12 +33,11 @@ const MyFunkySlider = (props) => {
     const renderSlides = () => {
         const images = props.pictures.map((image) => {
             const img = image.image.childImageSharp;
-            console.log(image)
             const alt = image.alt
             return (
                 <SwiperSlide>
                     <a href={alt} target="_blank">
-                        <div className={"slide"} style={{ display: "flex", backgroundImage: "url(" + img.fluid.src + ")", backgroundSize: "300px", width: "300px", height: "300px" }}></div>
+                        <div className={"slide"} style={{ display: "flex", backgroundImage: "url(" + img.fluid.src + ")", backgroundSize: "contain", backgroundRepeat: "no-repeat", backgroundPosition: "center", minWidth: "200px", minHeight: "200px", maxHeight: "300px" }}></div>
                     </a>
                 </SwiperSlide>
 
@@ -47,13 +46,15 @@ const MyFunkySlider = (props) => {
         return images;
     };
 
+    const slides = window.innerWidth > 600 ? 3 : 1
+
 
     return (
         <Swiper
             spaceBetween={50}
-            slidesPerView={3}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
+            slidesPerView={slides}
+            loop={true}
+            autoplay={true}
         >
             {renderSlides()}
         </Swiper>

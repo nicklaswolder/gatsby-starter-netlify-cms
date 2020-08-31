@@ -90,7 +90,7 @@ const StartPageNavbar = class extends React.Component {
                                 </Link>
                             </div>
                             <div className={"artist-card sixth"}>
-                                <Link className="artist-card__title testtesttest" to="/contact">
+                                <Link className="artist-card__title testtesttest" to="/collab">
                                     {/* <RiMailSendLine /> */}
                                     Samarbeten
                                 </Link>

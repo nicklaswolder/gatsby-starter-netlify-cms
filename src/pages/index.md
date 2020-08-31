@@ -2,13 +2,11 @@
 templateKey: index-page
 title: Vin vivant
 image: /img/skärmavbild-2020-08-03-kl.-09.03.23.png
-heading: Kommande event
 subheading: We‘re a import company in Sweden that only import and drink
   naturally produced wines.
 mainpitch:
   title: Filosofi
   description: Detta är våran filosofi
-description: "Dessa event är på g! "
 intro:
   blurbs:
     - image: /img/skärmavbild-2020-08-03-kl.-09.05.32.png

@@ -14,8 +14,6 @@ export const IndexPageTemplate = ({
     image,
     title,
     mainpitch,
-    heading,
-    description,
     subheading,
     intro,
     main,
@@ -95,9 +93,9 @@ export const IndexPageTemplate = ({
                 <div className="columns">
                     <div className="column is-12">
                         <h3 className="has-text-weight-semibold is-size-2">
-                            {heading}
+                            {intro.heading}
                         </h3>
-                        <p>{description}</p>
+                        <p>{intro.description}</p>
                     </div>
                 </div>
 
@@ -158,10 +156,8 @@ const IndexPage = ({ data }) => {
             <IndexPageTemplate
                 image={frontmatter.image}
                 title={frontmatter.title}
-                heading={frontmatter.heading}
                 subheading={frontmatter.subheading}
                 mainpitch={frontmatter.mainpitch}
-                description={frontmatter.description}
                 intro={frontmatter.intro}
                 main={frontmatter.main}
             />
@@ -191,13 +187,11 @@ export const pageQuery = graphql`
             }
           }
         }
-        heading
         subheading
         mainpitch {
           title
           description
         }
-        description
         intro {
           blurbs {
             image {
