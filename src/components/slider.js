@@ -46,15 +46,21 @@ const MyFunkySlider = (props) => {
         return images;
     };
 
-    const slides = window.innerWidth > 600 ? 3 : 1
-
 
     return (
         <Swiper
             spaceBetween={50}
-            slidesPerView={slides}
+            slidesPerView={3}
             loop={true}
             autoplay={true}
+            breakpoints={{
+                600: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+            }}
         >
             {renderSlides()}
         </Swiper>
