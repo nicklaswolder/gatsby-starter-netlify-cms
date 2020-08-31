@@ -19,12 +19,9 @@ intro:
     - image: /img/skärmavbild-2020-08-03-kl.-09.06.02.png
       text: |
         Cohen
-  heading: What we offer
-  description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
+  heading: Kommande event
+  description: We‘re a import company in Sweden that only import and drink
+    naturally produced wines.<a href="hej"></a>
 main:
   heading: Webbshop
   description: Här är några flaskor från webbshoppen
