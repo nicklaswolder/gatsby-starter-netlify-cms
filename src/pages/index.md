@@ -19,7 +19,7 @@ intro:
     - image: /img/skärmavbild-2020-08-03-kl.-09.06.02.png
       text: |
         Cohen
-  heading: Kommande event
+  heading: aKommande event
   description: We‘re a import company in Sweden that only import and drink
     naturally produced wines.<a href="hej"></a>
 main:
